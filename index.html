@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>List 50day - 50project</title>
+</head>
+
+<body>
+  <div>
+    <ul id="list-project"></ul>
+  </div>
+  <script>
+    const allProjects = [
+      { day: "01", title: "Expanding Cards", checked: true },
+      { day: "02", title: "Progress Steps", checked: true },
+      { day: "03", title: "Rotating Navigation Animation", checked: true },
+      { day: "04", title: "Hidden Search Widget", checked: true },
+      { day: "05", title: "Blurry Loading", checked: true },
+      { day: "06", title: "Scroll Animation", checked: true },
+      { day: "07", title: "Split Landing Page", checked: true },
+      { day: "08", title: "Form Wave" , checked: true },
+      { day: "09", title: "Sound Board", checked: true },
+      { day: "10", title: "Dad Jokes", checked: false },
+      { day: "11", title: "Event Keycodes", checked: true},
+      { day: "12", title: "Faq Collapse", checked: true},
+      { day: "13", title: "Random Choice Picker" },
+      { day: "14", title: "Animated Navigation" },
+      { day: "15", title: "Incrementing Counter" },
+      { day: "16", title: "Drink Water" },
+      { day: "17", title: "Movie App" },
+      { day: "18", title: "Background Slider" },
+      { day: "19", title: "Theme Clock", checked: true },
+      { day: "20", title: "Button Ripple Effect" },
+      { day: "21", title: "Drag N Drop" },
+      { day: "22", title: "Drawing App" },
+      { day: "23", title: "Kinetic Loader" },
+      { day: "24", title: "Content Placeholder" },
+      { day: "25", title: "Sticky Navbar" },
+      { day: "26", title: "Double Vertical Slider" },
+      { day: "27", title: "Toast Notification", checked: true },
+      { day: "28", title: "Github Profiles" },
+      { day: "29", title: "Double Click Heart" },
+      { day: "30", title: "Auto Text Effect" },
+      { day: "31", title: "Password Generator" },
+      { day: "32", title: "Good Cheap Fast" },
+      { day: "33", title: "Notes App" },
+      { day: "34", title: "Animated Countdown" },
+      { day: "35", title: "Image Carousel" },
+      { day: "36", title: "Hoverboard" },
+      { day: "37", title: "Pokedex" },
+      { day: "38", title: "Mobile Tab Navigation" },
+      { day: "39", title: "Password Strength Background" },
+      { day: "40", title: "3d Background Boxes" },
+      { day: "41", title: "Verify Account Ui" },
+      { day: "42", title: "Live User Filter" },
+      { day: "43", title: "Feedback Ui Design" },
+      { day: "44", title: "Custom Range Slider" },
+      { day: "45", title: "Netflix Mobile Navigation" },
+      { day: "46", title: "Quiz App" },
+      { day: "47", title: "Testimonial Box Switcher" },
+      { day: "48", title: "Random Image Feed" },
+      { day: "49", title: "Todo List" },
+      { day: "50", title: "Insect Catch Game" },
+    ]
+    const list = document.getElementById('list-project')
+    allProjects.forEach(({ day, title, checked = false }) => {
+      const source = document.createElement('a')
+      source.href = `./project${day}/`;
+      source.innerText = `day:${day} ${title} ${checked ? '✅' : '❌'}`
+      const li = document.createElement('li')
+      li.append(source)
+      list.appendChild(li)
+    })
+
+  </script>
+
+</body>
+
+</html>
