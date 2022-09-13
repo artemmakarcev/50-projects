@@ -5,7 +5,7 @@ function removeActive(){
 
 }
 
-function tonggleCard(panel){
+function tonggleCard(){
   removeActive();
   this.classList.add("active")
 }
