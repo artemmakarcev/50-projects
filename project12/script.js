@@ -1,4 +1,4 @@
-const faqs = document.querySelectorAll('.faq');
+/* const faqs = document.querySelectorAll('.faq');
 
 function removeActiveFAQ(){
   faqs.forEach((faq) => {
@@ -13,7 +13,7 @@ function tonggleFAQ(faq) {
 
 faqs.forEach((faq) => {
   faq.addEventListener('click', (tonggleFAQ));
-});
+}); */
 
 /* const panels = document.querySelectorAll('.panel');
 
@@ -31,3 +31,11 @@ function tonggleCard(panel) {
 panels.forEach((panel) => {
   panel.addEventListener('click', tonggleCard);
 }); */
+
+const toggles = document.querySelectorAll('.faq-toggle');
+
+toggles.forEach((toggle) => {
+  toggle.addEventListener('click', () => {
+    toggle.parentNode.classList.toggle('active');
+  });
+});
