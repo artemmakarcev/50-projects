@@ -9,7 +9,7 @@ const animated_bgs = document.querySelectorAll(".animated-bg");
 const animated_bg_texts = document.querySelectorAll(".animated-bg-text");
 
 function getData() {
-  header.innerHTML = `<img src="https://source.unsplash.com/random/350x200" alt="Random unsplash image" />`;
+  header.innerHTML = `<img src="https://source.unsplash.com/random" alt="Random unsplash image" />`;
   title.innerHTML = `Lorem ipsum dolor sit amet`;
   excerpt.innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, pariatur.`;
   profile_img.innerHTML = `<img src="https://randomuser.me/api/portraits/men/${Math.floor(Math.random() * 100)}.jpg" alt="Random user" />`;
